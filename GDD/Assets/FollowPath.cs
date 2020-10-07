@@ -8,10 +8,13 @@ public class FollowPath : MonoBehaviour
     public PathCreator pathCreator;
     public EndOfPathInstruction endOfPathInstruction;
     public float speed = 5;
-    float distanceTravelled;
+    [HideInInspector]
+    public bool slowed = false;
+    private float distanceTravelled;
 
     void Start()
     {
+        slowed = false;
         if (pathCreator != null)
         {
             // Subscribed to the pathUpdated event so that we're notified if the path changes during the game

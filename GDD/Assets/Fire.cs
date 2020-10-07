@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using TreeEditor;
 using UnityEngine;
 public class Fire : MonoBehaviour
@@ -27,8 +28,8 @@ public class Fire : MonoBehaviour
             if (transform.position == target.transform.position)
             {
                 getTargets();
-                List<GameObject> copy = targets;
-                foreach(GameObject ennemy in copy)
+                List<GameObject> copy = targets.Where(item => item != null).ToList();
+                foreach (GameObject ennemy in copy)
                     if(ennemy != null)
                         ennemy.GetComponent<Alive>().life -= damage;
                 Destroy(gameObject);
