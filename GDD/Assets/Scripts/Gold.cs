@@ -69,23 +69,25 @@ public class Gold : MonoBehaviour
             if (hit.collider.gameObject.tag == "Floor")
             {
                 Vector3 position = hit.collider.gameObject.transform.position + new Vector3(0,0.7f,0);
-                hit.collider.gameObject.GetComponent<BoxCollider>().enabled = false;
                 if (towerToInstantiate == 0 && gold >= towerMono.GetComponent<TowerMono>().cost)
                 {
                     gold -= towerMono.GetComponent<TowerMono>().cost;
                     Instantiate(towerMono, position, Quaternion.identity);
+                    hit.collider.gameObject.GetComponent<BoxCollider>().enabled = false;
                 }
 
                 if (towerToInstantiate == 1 && gold >= towerMulti.GetComponent<TowerMulti>().cost)
                 {
                     gold -= towerMulti.GetComponent<TowerMulti>().cost;
                     Instantiate(towerMulti, position, Quaternion.identity);
+                    hit.collider.gameObject.GetComponent<BoxCollider>().enabled = false;
                 }
 
                 if (towerToInstantiate == 2 && gold >= towerSlow.GetComponent<TowerSlow>().cost)
                 {
                     gold -= towerSlow.GetComponent<TowerSlow>().cost;
                     Instantiate(towerSlow, position, Quaternion.identity);
+                    hit.collider.gameObject.GetComponent<BoxCollider>().enabled = false;
                 }
             }
         }
