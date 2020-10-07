@@ -16689,6 +16689,10 @@ PrefabInstance:
       propertyPath: towerText
       value: 
       objectReference: {fileID: 176284034}
+    - target: {fileID: 2649470798922767546, guid: 72b5f3ccc49ab5c4fa326915f1aabbd8, type: 3}
+      propertyPath: startGold
+      value: 30
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 72b5f3ccc49ab5c4fa326915f1aabbd8, type: 3}
 --- !u!1001 &562136686
@@ -29807,7 +29811,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 997512293}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -12.069855, y: 2.25, z: 3.3925972}
+  m_LocalPosition: {x: -12.069855, y: 1.78, z: 3.3925972}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -30077,8 +30081,8 @@ MonoBehaviour:
   editorData:
     _bezierPath:
       points:
-      - {x: -0.13368607, y: 0, z: -1.6019764}
-      - {x: 0.63111115, y: -0.08998799, z: -1.727485}
+      - {x: -0.35559654, y: -0.19978738, z: -1.9094225}
+      - {x: 0.40920067, y: -0.28977537, z: -1.8648313}
       - {x: 11.400896, y: -0.09261958, z: -2.0912282}
       - {x: 11.663797, y: 0, z: -1.9324827}
       - {x: 11.932173, y: 0.094548106, z: -1.7704318}
@@ -30114,7 +30118,7 @@ MonoBehaviour:
       - 0
       globalNormalsAngle: 0
       flipNormals: 0
-    vertexPathUpToDate: 0
+    vertexPathUpToDate: 1
     vertexPathMaxAngleError: 0.3
     vertexPathMinVertexSpacing: 0.01
     showTransformTool: 1
@@ -30143,7 +30147,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1006632764}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -29.08, y: 2.69, z: 3.3925972}
+  m_LocalPosition: {x: -29.08, y: 2.43, z: 3.3925972}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

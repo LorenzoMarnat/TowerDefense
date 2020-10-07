@@ -96,9 +96,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reloadTime: 0.1
-  range: 5
+  range: 7
   slow: 50
-  cost: 150
+  cost: 20
 --- !u!65 &1742354972971071412
 BoxCollider:
   m_ObjectHideFlags: 0

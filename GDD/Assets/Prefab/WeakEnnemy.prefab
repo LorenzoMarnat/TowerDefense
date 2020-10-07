@@ -99,8 +99,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pathCreator: {fileID: 0}
   endOfPathInstruction: 2
-  speed: 2
   slowed: 0
+  speed: 3
 --- !u!114 &4389491093483633746
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -113,8 +113,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 773808b9cc9af584ea36a9116efbc82f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  life: 50
-  gold: 50
+  life: 30
+  gold: 5
 --- !u!54 &2766679603984174511
 Rigidbody:
   m_ObjectHideFlags: 0
