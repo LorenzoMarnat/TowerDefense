@@ -98,3 +98,4 @@ MonoBehaviour:
   reloadTime: 1
   range: 3
   damage: 10
+  cost: 200

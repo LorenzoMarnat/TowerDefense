@@ -9,6 +9,7 @@ public class TowerMulti : MonoBehaviour
     public float reloadTime;
     public float range = 3;
     public float damage = 20;
+    public float cost = 100;
 
     private float reloadProgress = 0;
     private List<GameObject> targets;

@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8344503935361134767}
   - component: {fileID: 8344503935361134762}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: TowerSlow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -97,3 +97,4 @@ MonoBehaviour:
   reloadTime: 0.1
   range: 3
   slow: 2
+  cost: 150

@@ -5,6 +5,7 @@ using UnityEngine;
 public class Alive : MonoBehaviour
 {
     public float life = 100;
+    public float gold = 50;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,6 +17,7 @@ public class Alive : MonoBehaviour
     {
         if(life <= 0)
         {
+            GameObject.FindGameObjectWithTag("Player").GetComponent<Gold>().gold += gold;
             Destroy(gameObject);
         }
     }

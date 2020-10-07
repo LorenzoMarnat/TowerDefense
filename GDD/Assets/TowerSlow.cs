@@ -10,6 +10,7 @@ public class TowerSlow : MonoBehaviour
     public float reloadTime;
     public float range = 3;
     public float slow = 2;
+    public float cost = 100;
 
     private float reloadProgress = 0;
     private List<GameObject> targets;
