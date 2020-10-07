@@ -236,9 +236,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'A - Mono Target Tower
+  m_Text: 'A - Accurate Tower
 
-    Cost: 100 Golds'
+    15 Golds'
 --- !u!1 &6839471294670045752
 GameObject:
   m_ObjectHideFlags: 0
@@ -715,7 +715,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'E - Slowing Tower
 
-    Cost: 150 Golds'
+    20 Golds'
 --- !u!1 &6839471294860711645
 GameObject:
   m_ObjectHideFlags: 0
@@ -977,6 +977,6 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Z - Multi Targets Tower
+  m_Text: 'Z - AOE Tower
 
-    Cost: 200 Golds'
+    30 Golds'
