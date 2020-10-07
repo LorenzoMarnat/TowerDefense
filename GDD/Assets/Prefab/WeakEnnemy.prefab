@@ -14,8 +14,9 @@ GameObject:
   - component: {fileID: 2766679603984174484}
   - component: {fileID: 4389491093483633746}
   - component: {fileID: 2766679603984174511}
+  - component: {fileID: 1573704122737964702}
   m_Layer: 0
-  m_Name: Ennemy
+  m_Name: WeakEnnemy
   m_TagString: Ennemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -99,6 +100,7 @@ MonoBehaviour:
   pathCreator: {fileID: 0}
   endOfPathInstruction: 2
   speed: 2
+  slowed: 0
 --- !u!114 &4389491093483633746
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -112,6 +114,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   life: 50
+  gold: 50
 --- !u!54 &2766679603984174511
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -128,3 +131,16 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!65 &1573704122737964702
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2766679603984174485}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.99999994, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}

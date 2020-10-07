@@ -5,11 +5,15 @@ using PathCreation;
 
 public class FollowPath : MonoBehaviour
 {
+    [HideInInspector]
     public PathCreator pathCreator;
+    [HideInInspector]
     public EndOfPathInstruction endOfPathInstruction;
-    public float speed = 5;
     [HideInInspector]
     public bool slowed = false;
+
+    public float speed = 5;
+
     private float distanceTravelled;
 
     void Start()
@@ -30,7 +34,7 @@ public class FollowPath : MonoBehaviour
             GameObject chateau = GameObject.FindGameObjectWithTag("Player");
             if(chateau != null)
             {
-                chateau.GetComponent<Alive>().life -= 50;
+                chateau.GetComponent<Castle>().life -= 50;
             }
         }
 
@@ -42,8 +46,6 @@ public class FollowPath : MonoBehaviour
         }
     }
 
-    // If the path changes during the game, update the distance travelled so that the follower's position on the new path
-    // is as close as possible to its position on the old path
     void OnPathChanged()
     {
         distanceTravelled = pathCreator.path.GetClosestDistanceAlongPath(transform.position);

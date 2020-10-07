@@ -66,22 +66,27 @@ public class Gold : MonoBehaviour
 
         if (Physics.Raycast(ray, out hit))
         {
-            if (towerToInstantiate == 0 && gold >= towerMono.GetComponent<TowerMono>().cost)
+            if (hit.collider.gameObject.tag == "Floor")
             {
-                gold -= towerMono.GetComponent<TowerMono>().cost;
-                Instantiate(towerMono, hit.point, Quaternion.identity);
-            }
+                Vector3 position = hit.point + new Vector3(0, 0.7f, 0);
 
-            if (towerToInstantiate == 1 && gold >= towerMulti.GetComponent<TowerMulti>().cost)
-            {
-                gold -= towerMulti.GetComponent<TowerMulti>().cost;
-                Instantiate(towerMulti, hit.point, Quaternion.identity);
-            }
+                if (towerToInstantiate == 0 && gold >= towerMono.GetComponent<TowerMono>().cost)
+                {
+                    gold -= towerMono.GetComponent<TowerMono>().cost;
+                    Instantiate(towerMono, position, Quaternion.identity);
+                }
 
-            if (towerToInstantiate == 2 && gold >= towerSlow.GetComponent<TowerSlow>().cost)
-            {
-                gold -= towerSlow.GetComponent<TowerSlow>().cost;
-                Instantiate(towerSlow, hit.point, Quaternion.identity);
+                if (towerToInstantiate == 1 && gold >= towerMulti.GetComponent<TowerMulti>().cost)
+                {
+                    gold -= towerMulti.GetComponent<TowerMulti>().cost;
+                    Instantiate(towerMulti, position, Quaternion.identity);
+                }
+
+                if (towerToInstantiate == 2 && gold >= towerSlow.GetComponent<TowerSlow>().cost)
+                {
+                    gold -= towerSlow.GetComponent<TowerSlow>().cost;
+                    Instantiate(towerSlow, position, Quaternion.identity);
+                }
             }
         }
     }
