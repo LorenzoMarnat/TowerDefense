@@ -97,4 +97,4 @@ MonoBehaviour:
   target: {fileID: 0}
   speed: 20
   damage: 50
-  range: 2
+  range: 10

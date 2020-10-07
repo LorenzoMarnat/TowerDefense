@@ -9,7 +9,7 @@ public class TowerSlow : MonoBehaviour
     //public GameObject firePrefab;
     public float reloadTime;
     public float range = 3;
-    public float slow = 2;
+    public float slow = 50;
     public float cost = 100;
 
     private float reloadProgress = 0;
@@ -37,16 +37,15 @@ public class TowerSlow : MonoBehaviour
                 {
                     if (Vector3.Distance(transform.position, target.transform.position) <= range && !target.GetComponent<FollowPath>().slowed)
                     {
-                        target.GetComponent<FollowPath>().speed /= slow;
+                        target.GetComponent<FollowPath>().speed *= slow/100;
                         target.GetComponent<FollowPath>().slowed = true;
                     }
                     else if (Vector3.Distance(transform.position, target.transform.position) > range && target.GetComponent<FollowPath>().slowed)
                     {
-                        target.GetComponent<FollowPath>().speed *= slow;
+                        target.GetComponent<FollowPath>().speed /= slow/100;
                         target.GetComponent<FollowPath>().slowed = false;
                         targets.Remove(target);
                     }
-                        
                 }
                 else
                     targets.Remove(target);

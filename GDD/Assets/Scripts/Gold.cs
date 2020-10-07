@@ -68,7 +68,7 @@ public class Gold : MonoBehaviour
         {
             if (hit.collider.gameObject.tag == "Floor")
             {
-                Vector3 position = hit.point + new Vector3(0, 0.7f, 0);
+                Vector3 position = hit.collider.gameObject.transform.position + new Vector3(0,0.7f,0);
 
                 if (towerToInstantiate == 0 && gold >= towerMono.GetComponent<TowerMono>().cost)
                 {

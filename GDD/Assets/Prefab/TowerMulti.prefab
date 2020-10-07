@@ -97,7 +97,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   firePrefab: {fileID: 1126068721653987776, guid: 1fda7a168f84ec94d8257e0ae5d7722e, type: 3}
   reloadTime: 1
-  range: 3
+  range: 5
   damage: 10
   cost: 200
 --- !u!136 &-4388398554188597245
