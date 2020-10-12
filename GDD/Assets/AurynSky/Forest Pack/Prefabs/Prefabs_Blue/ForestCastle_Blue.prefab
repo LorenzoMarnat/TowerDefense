@@ -2194,7 +2194,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   goldText: {fileID: 0}
   towerText: {fileID: 0}
-  towerMono: {fileID: 1785341509250826673, guid: c68f052bd16c00e4f9c6b5e2584f47f5, type: 3}
+  towerMono: {fileID: 187918, guid: 77a599bd67f72e24999e1d5d60f433d0, type: 3}
   towerMulti: {fileID: 4294198649566100346, guid: 670db53132cd2a74f818778111684625, type: 3}
   towerSlow: {fileID: 8344503935361134766, guid: d63a70a7e36f07440a3a807873ea0bf4, type: 3}
   gold: 0
