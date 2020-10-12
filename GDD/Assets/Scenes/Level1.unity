@@ -29928,9 +29928,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a784d88b58761c4da7840a31f3a07ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weakEnnemyPrefab: {fileID: 2766679603984174485, guid: 0499d34d5cc43044fa3a3ed4ff62af99, type: 3}
-  mediumEnnemyPrefab: {fileID: 1388393659659861167, guid: 7e8fe2694cdf54c4e85b1793a19081b0, type: 3}
-  strongEnnemyPrefab: {fileID: 7396784272918246619, guid: 5588a0b3a1216134ea421cbdcbe13eb5, type: 3}
+  weakEnnemyPrefab: {fileID: 1783563462218004, guid: 7f931d4b5c97d194d8726ddf5acdd440, type: 3}
+  mediumEnnemyPrefab: {fileID: 1462720695320296, guid: e9a03d46b76afe246a9ffd58d255bb65, type: 3}
+  strongEnnemyPrefab: {fileID: 1128758269040250, guid: f88c6ad57910d8648807bcf0c131f49d, type: 3}
   reloadTime: 3
   wave: 0
 --- !u!114 &831752540
@@ -29983,7 +29983,7 @@ MonoBehaviour:
       - 0
       - 0
       - 0
-      globalNormalsAngle: 0
+      globalNormalsAngle: 90
       flipNormals: 0
     vertexPathUpToDate: 1
     vertexPathMaxAngleError: 0.3
@@ -30002,7 +30002,7 @@ MonoBehaviour:
     showPathOptions: 1
     showVertexPathDisplayOptions: 1
     showVertexPathOptions: 1
-    showNormals: 0
+    showNormals: 1
     showNormalsHelpInfo: 0
     tabIndex: 0
   initialized: 1
@@ -30014,7 +30014,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 831752538}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 27.57, y: 1.5, z: -25.243}
+  m_LocalPosition: {x: 27.57, y: 1.3, z: -25.243}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

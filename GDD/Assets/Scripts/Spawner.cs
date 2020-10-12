@@ -32,41 +32,41 @@ public class Spawner : MonoBehaviour
             switch (wave)
             {
                 case 1:
-                    go = Instantiate(weakEnnemyPrefab, new Vector3(-10, -10, -10), Quaternion.identity);
+                    go = Instantiate(weakEnnemyPrefab, new Vector3(-10, -10, -10), Quaternion.Euler(0, 0, 0));
                     break;
 
                 case 2:
                     if (!strongerEnnemy)
                     {
-                        go = Instantiate(weakEnnemyPrefab, new Vector3(-10, -10, -10), Quaternion.identity);
+                        go = Instantiate(weakEnnemyPrefab, new Vector3(-10, -10, -10), Quaternion.Euler(0,0,0));
                         strongerEnnemy = true;
                     }
                     else
                     {
-                        go = Instantiate(mediumEnnemyPrefab, new Vector3(-10, -10, -10), Quaternion.identity);
+                        go = Instantiate(mediumEnnemyPrefab, new Vector3(-10, -10, -10), Quaternion.Euler(0, 0, 0));
                         strongerEnnemy = false;
                     }
                     break;
 
                 case 3:
-                    go = Instantiate(mediumEnnemyPrefab, new Vector3(-10, -10, -10), Quaternion.identity);
+                    go = Instantiate(mediumEnnemyPrefab, new Vector3(-10, -10, -10), Quaternion.Euler(0, 0, 0));
                     break;
 
                 case 4:
                     if (!strongerEnnemy)
                     {
-                        go = Instantiate(mediumEnnemyPrefab, new Vector3(-10, -10, -10), Quaternion.identity);
+                        go = Instantiate(mediumEnnemyPrefab, new Vector3(-10, -10, -10), Quaternion.Euler(0, 0, 0));
                         strongerEnnemy = true;
                     }
                     else
                     {
-                        go = Instantiate(strongEnnemyPrefab, new Vector3(-10, -10, -10), Quaternion.identity);
+                        go = Instantiate(strongEnnemyPrefab, new Vector3(-10, -10, -10), Quaternion.Euler(0, 0, 0));
                         strongerEnnemy = false;
                     }
                     break;
 
                 case 5:
-                    go = Instantiate(strongEnnemyPrefab, new Vector3(-10, -10, -10), Quaternion.identity);
+                    go = Instantiate(strongEnnemyPrefab, new Vector3(-10, -10, -10), Quaternion.Euler(0, 0, 0));
                     break;
             }
             go.GetComponent<FollowPath>().pathCreator = GetComponent<PathCreator>();
