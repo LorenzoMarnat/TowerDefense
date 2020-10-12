@@ -29950,23 +29950,23 @@ MonoBehaviour:
       points:
       - {x: -0.63274765, y: 0, z: -0.2882061}
       - {x: -0.035778046, y: 0, z: -0.42168236}
-      - {x: -22.964697, y: 0.11210166, z: -1.0778824}
-      - {x: -23.045841, y: 0.107008934, z: 0.037187576}
-      - {x: -23.218847, y: 0.096150875, z: 2.4145985}
-      - {x: -22.74783, y: 0.50315285, z: 5.5714607}
-      - {x: -22.965843, y: 0.060850143, z: 6.546417}
-      - {x: -23.120852, y: -0.2536293, z: 7.2396164}
-      - {x: -4.260515, y: 0, z: 7.264633}
-      - {x: -2.5219612, y: -0.5176444, z: 7.8510094}
-      - {x: -1.446756, y: -0.83778054, z: 8.213653}
-      - {x: -2.2763634, y: 0, z: 12.061748}
-      - {x: -2.43466, y: -0.17542124, z: 15.244128}
-      - {x: -2.4958537, y: -0.24323481, z: 16.47436}
-      - {x: -12.811976, y: 0, z: 15.081187}
+      - {x: -23.231535, y: 0, z: -0.17708969}
+      - {x: -23.627556, y: 0, z: 0.056394577}
+      - {x: -24.23353, y: 0, z: 0.41366193}
+      - {x: -24.187107, y: 0, z: 6.8199086}
+      - {x: -23.80861, y: 0, z: 7.1127663}
+      - {x: -23.581612, y: 0, z: 7.2884045}
+      - {x: -3.8855476, y: 0, z: 7.172209}
+      - {x: -3.296135, y: 0, z: 7.544548}
+      - {x: -2.3010905, y: 0, z: 8.17313}
+      - {x: -1.8008888, y: 0, z: 14.507434}
+      - {x: -2.43466, y: 0, z: 15.244128}
+      - {x: -2.9394352, y: 0, z: 15.830878}
+      - {x: -12.449934, y: 0, z: 15.243108}
       - {x: -12.927852, y: 0, z: 15.825976}
-      - {x: -13.556532, y: 0, z: 19.866817}
-      - {x: -12.495529, y: 0, z: 19.345396}
-      - {x: -12.6343975, y: 0, z: 21.204952}
+      - {x: -13.210986, y: 0, z: 16.171288}
+      - {x: -13.01386, y: 0.06367636, z: 20.075377}
+      - {x: -12.966354, y: 0, z: 21.19125}
       isClosed: 0
       space: 0
       controlMode: 0
@@ -30000,7 +30000,7 @@ MonoBehaviour:
     showBezierPathInVertexMode: 0
     showDisplayOptions: 0
     showPathOptions: 1
-    showVertexPathDisplayOptions: 0
+    showVertexPathDisplayOptions: 1
     showVertexPathOptions: 1
     showNormals: 0
     showNormalsHelpInfo: 0
@@ -30014,7 +30014,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 831752538}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 27.57, y: 2.44, z: -25.243}
+  m_LocalPosition: {x: 27.57, y: 1.5, z: -25.243}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -53168,6 +53168,10 @@ PrefabInstance:
       propertyPath: towerText
       value: 
       objectReference: {fileID: 2037817031}
+    - target: {fileID: 2649470798922767546, guid: 72b5f3ccc49ab5c4fa326915f1aabbd8, type: 3}
+      propertyPath: startGold
+      value: 20
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 72b5f3ccc49ab5c4fa326915f1aabbd8, type: 3}
 --- !u!114 &1513439334 stripped
