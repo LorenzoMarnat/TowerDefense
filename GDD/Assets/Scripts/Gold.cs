@@ -74,6 +74,7 @@ public class Gold : MonoBehaviour
             {
                 gold -= 50;
                 tower.damage += 10;
+                tower.reloadTime -= 0.1f;
                 tower.upgrades += 1;
             }
         }
@@ -85,6 +86,7 @@ public class Gold : MonoBehaviour
             {
                 gold -= 50;
                 tower.damage += 10;
+                tower.firePrefab.GetComponent<Fire>().range += 1;
                 tower.upgrades += 1;
             }
         }

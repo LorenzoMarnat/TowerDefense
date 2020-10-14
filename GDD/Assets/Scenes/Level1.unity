@@ -53168,10 +53168,6 @@ PrefabInstance:
       propertyPath: towerText
       value: 
       objectReference: {fileID: 2037817031}
-    - target: {fileID: 2649470798922767546, guid: 72b5f3ccc49ab5c4fa326915f1aabbd8, type: 3}
-      propertyPath: startGold
-      value: 500
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 72b5f3ccc49ab5c4fa326915f1aabbd8, type: 3}
 --- !u!114 &1513439334 stripped
