@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Ennemy
   - Floor
+  - Mono
+  - Multi
+  - Slow
   layers:
   - Default
   - TransparentFX

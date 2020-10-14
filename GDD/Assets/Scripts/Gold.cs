@@ -18,6 +18,7 @@ public class Gold : MonoBehaviour
     public float startGold = 100;
 
     private int towerToInstantiate;
+    private GameObject towerToUpgrade = null;
     // Start is called before the first frame update
     void Start()
     {
@@ -58,6 +59,48 @@ public class Gold : MonoBehaviour
         towerText.GetComponent<Text>().text = "Selected: Tower Slow";
         towerToInstantiate = 2;
     }
+
+    public void upgrade()
+    {
+        if(towerToUpgrade != null)
+            upgradeTower(towerToUpgrade);
+    }
+    private void upgradeTower(GameObject go)
+    {
+        if (go.tag == "Mono" && gold >= 50)
+        {
+            TowerMono tower = go.GetComponent<TowerMono>();
+            if (tower.upgrades < 2)
+            {
+                gold -= 50;
+                tower.damage += 10;
+                tower.upgrades += 1;
+            }
+        }
+
+        if (go.tag == "Multi" && gold >= 50)
+        {
+            TowerMulti tower = go.GetComponent<TowerMulti>();
+            if (tower.upgrades < 2)
+            {
+                gold -= 50;
+                tower.damage += 10;
+                tower.upgrades += 1;
+            }
+        }
+
+        if (go.tag == "Slow" && gold >= 50)
+        {
+            TowerSlow tower = go.GetComponent<TowerSlow>();
+            if (tower.upgrades < 2)
+            {
+                gold -= 50;
+                tower.slow += 10;
+                tower.upgrades += 1;
+            }
+        }
+    }
+
     private void Clicked()
     {
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
@@ -66,29 +109,35 @@ public class Gold : MonoBehaviour
 
         if (Physics.Raycast(ray, out hit))
         {
+            GameObject go = hit.collider.gameObject;
             if (hit.collider.gameObject.tag == "Floor")
             {
-                Vector3 position = hit.collider.gameObject.transform.position + new Vector3(0,0.7f,0);
+                Vector3 position = go.transform.position + new Vector3(0,0.7f,0);
                 if (towerToInstantiate == 0 && gold >= towerMono.GetComponent<TowerMono>().cost)
                 {
                     gold -= towerMono.GetComponent<TowerMono>().cost;
                     Instantiate(towerMono, position, Quaternion.identity);
-                    hit.collider.gameObject.GetComponent<BoxCollider>().enabled = false;
+                    go.GetComponent<BoxCollider>().enabled = false;
                 }
 
                 if (towerToInstantiate == 1 && gold >= towerMulti.GetComponent<TowerMulti>().cost)
                 {
                     gold -= towerMulti.GetComponent<TowerMulti>().cost;
                     Instantiate(towerMulti, position, Quaternion.identity);
-                    hit.collider.gameObject.GetComponent<BoxCollider>().enabled = false;
+                    go.GetComponent<BoxCollider>().enabled = false;
                 }
 
                 if (towerToInstantiate == 2 && gold >= towerSlow.GetComponent<TowerSlow>().cost)
                 {
                     gold -= towerSlow.GetComponent<TowerSlow>().cost;
                     Instantiate(towerSlow, position, Quaternion.identity);
-                    hit.collider.gameObject.GetComponent<BoxCollider>().enabled = false;
+                    go.GetComponent<BoxCollider>().enabled = false;
                 }
+            }
+
+            if (go.tag == "Mono" || go.tag == "Multi" || go.tag == "Slow")
+            {
+                towerToUpgrade = go;
             }
         }
     }

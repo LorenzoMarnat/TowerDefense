@@ -10,6 +10,8 @@ public class TowerMulti : MonoBehaviour
     public float range = 3;
     public float damage = 20;
     public float cost = 100;
+    [HideInInspector]
+    public int upgrades = 0;
 
     private float reloadProgress = 0;
     private List<GameObject> targets;
@@ -18,6 +20,7 @@ public class TowerMulti : MonoBehaviour
     void Start()
     {
         reloadProgress = 0;
+        upgrades = 0;
         targets = new List<GameObject>();
     }
 

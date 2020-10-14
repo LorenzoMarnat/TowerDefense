@@ -34,7 +34,8 @@ public class WaveManager : MonoBehaviour
                 spawner.reloadTime -= 0.5f;
                 spawner.wave++;
             }
-            waveText.GetComponent<Text>().text = "Wave: " + wave.ToString();
+            if(wave <= 5)
+                waveText.GetComponent<Text>().text = "Wave: " + wave.ToString();
         }
     }
 }

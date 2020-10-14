@@ -11,6 +11,8 @@ public class TowerSlow : MonoBehaviour
     public float range = 3;
     public float slow = 50;
     public float cost = 100;
+    [HideInInspector]
+    public int upgrades = 0;
 
     private float reloadProgress = 0;
     private List<GameObject> targets;
@@ -19,6 +21,7 @@ public class TowerSlow : MonoBehaviour
     void Start()
     {
         reloadProgress = 0;
+        upgrades = 0;
         targets = new List<GameObject>();
     }
 
