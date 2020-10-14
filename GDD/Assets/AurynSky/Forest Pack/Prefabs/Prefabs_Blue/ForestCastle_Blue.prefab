@@ -2198,7 +2198,7 @@ MonoBehaviour:
   towerMulti: {fileID: 4294198649566100346, guid: 670db53132cd2a74f818778111684625, type: 3}
   towerSlow: {fileID: 8344503935361134766, guid: d63a70a7e36f07440a3a807873ea0bf4, type: 3}
   gold: 0
-  startGold: 100
+  startGold: 20
 --- !u!1 &1659403169508396
 GameObject:
   m_ObjectHideFlags: 0

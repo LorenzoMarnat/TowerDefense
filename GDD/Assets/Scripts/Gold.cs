@@ -137,7 +137,22 @@ public class Gold : MonoBehaviour
 
             if (go.tag == "Mono" || go.tag == "Multi" || go.tag == "Slow")
             {
-                towerToUpgrade = go;
+                if (go != towerToUpgrade)
+                {
+                    if(towerToUpgrade != null)
+                    {
+                        Outline ol = towerToUpgrade.GetComponent<Outline>();
+                        Destroy(ol);
+                    }
+                        
+                    Outline outline = go.gameObject.AddComponent<Outline>();
+
+                    outline.OutlineMode = Outline.Mode.OutlineAll;
+                    outline.OutlineColor = Color.yellow;
+                    outline.OutlineWidth = 5f;
+
+                    towerToUpgrade = go;
+                }
             }
         }
     }

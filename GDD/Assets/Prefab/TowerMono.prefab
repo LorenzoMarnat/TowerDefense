@@ -101,6 +101,7 @@ MonoBehaviour:
   range: 5
   damage: 15
   cost: 10
+  upgrades: 0
 --- !u!54 &1785341509250826667
 Rigidbody:
   m_ObjectHideFlags: 0

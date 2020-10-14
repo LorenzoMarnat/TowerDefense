@@ -571,3 +571,4 @@ MonoBehaviour:
   range: 5
   damage: 15
   cost: 10
+  upgrades: 0
